@@ -1,0 +1,11 @@
+
+
+DROP TABLE IF EXISTS books;
+
+CREATE TABLE books (
+    id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+    title TEXT NOT NULL,
+    cover_image VARCHAR(2083) NOT NULL,
+    book_rating TEXT NOT NULL,
+    in_stock BOOLEAN NOT NULL
+);
